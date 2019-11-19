@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV METHOD="-L=mws://:$PORT"
+ENV METHOD="mws://:8080"
 
 RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-certificates \
     && export GOPATH=/tmp/go \
