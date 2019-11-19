@@ -1,0 +1,6 @@
+{	
+  "name": "Gost",	
+  "description": "Deploy Gost To Heroku.",	
+  "keywords": ["Gost"],	
+  "stack": "container"	
+ }
