@@ -11,4 +11,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
 
 ENTRYPOINT ["/usr/local/bin/gost"]
 
-CMD -L=mws://:${PORT}
+CMD /usr/local/bin/gost -L=mws://:${PORT}
