@@ -2,13 +2,7 @@
   "name": "gost",
   "description": "Deploy Gost To Heroku.",
   "keywords": ["gost"],
-  "env": {
-    "METHOD": {
-       "description": "https://docs.ginuerzh.xyz/gost/",
-       "value": "-L=mws://:8080"
-     }
-  },
   "stack": "container",
-  "website": "https://github.com/mixool/heroku-gost",
+  "website": "https://github.com/ginuerzh/gost/",
   "repository": "https://github.com/mixool/heroku-gost"
  }
