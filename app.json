@@ -1,6 +1,14 @@
-{	
-  "name": "Gost",	
-  "description": "Deploy Gost To Heroku.",	
-  "keywords": ["Gost"],	
-  "stack": "container"	
+{
+  "name": "gost",
+  "description": "Deploy Gost To Heroku.",
+  "keywords": ["gost"],
+  "env": {
+    "METHOD": {
+       "description": "https://docs.ginuerzh.xyz/gost/",
+       "value": "-L=mws://:$PORT"
+     }
+  },
+  "stack": "container",
+  "website": "https://github.com/mixool/heroku-gost",
+  "repository": "https://github.com/mixool/heroku-gost"
  }
