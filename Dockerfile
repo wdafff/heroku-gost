@@ -9,4 +9,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
 
-CMD /usr/local/bin/gost -L=mws://:${PORT}
+ENTRYPOINT /usr/local/bin/gost -L=mws://:${PORT}
