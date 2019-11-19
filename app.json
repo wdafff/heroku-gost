@@ -5,7 +5,7 @@
   "env": {
     "METHOD": {
        "description": "https://docs.ginuerzh.xyz/gost/",
-       "value": "-L=mws://:$PORT"
+       "value": "-L=mws://:8080"
      }
   },
   "stack": "container",
