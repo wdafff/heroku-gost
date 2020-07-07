@@ -32,5 +32,5 @@
   更多自定义使用方式参考 https://github.com/ginuerzh/gost/ https://docs.ginuerzh.xyz/gost/  
   
 ##### END? 谁告诉我怎么全自定义参数啊??? 
-  尝试把`-L socks5+ws://:$PORT`包括到METHOD内，就会导致部署失败
+  尝试把`-L socks5+ws://:$PORT`包括到METHOD内，就会导致部署失败  
   目前这部分只有fork项目按需修改...
