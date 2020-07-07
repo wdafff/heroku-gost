@@ -4,8 +4,8 @@
   "keywords": ["gost"],
   "env": {
     "METHOD": {
-      "description": "more method",
-      "value": "",
+      "description": "method",
+      "value": '-L socks5+ws://:${PORT}',
       "required": false
     }
   },
