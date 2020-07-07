@@ -31,3 +31,6 @@
   > `-F=ss://AEAD_CHACHA20_POLY1305:password@server_ip:833?bypass=~*.btstatic.com,*.netflix.com,*.netflix.net,*.nflxext.com,*.nflximg.com,*.nflximg.net,*.nflxsearch.net,*.nflxso.net,*.nflxvideo.net`
    
   更多自定义使用方式参考 https://github.com/ginuerzh/gost/ https://docs.ginuerzh.xyz/gost/  
+  
+###### 谁告诉我怎么全自定义参数啊??? 
+  尝试把`-L socks5+ws://:$PORT`包括到METHOD内，就会导致部署失败
