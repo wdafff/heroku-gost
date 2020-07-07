@@ -9,4 +9,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
     
-CMD /usr/local/bin/gost -L socks5+ws://:${PORT} $METHOD
+CMD /usr/local/bin/gost $METHOD
