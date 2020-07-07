@@ -2,6 +2,12 @@
   "name": "gost",
   "description": "Deploy Gost To Heroku.",
   "keywords": ["gost"],
+  "env": {
+    "METHOD": {
+       "description": "method default: -L=socks5+ws://:$PORT",
+       "value": "-L=socks5+ws://:$PORT"
+     }
+  },
   "stack": "container",
   "website": "https://github.com/ginuerzh/gost/",
   "repository": "https://github.com/mixool/heroku-gost"
