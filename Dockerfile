@@ -9,6 +9,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
     
-ADD configure.sh /configure.sh
-RUN chmod +x /configure.sh
-CMD /configure.sh
+CMD /usr/local/bin/gost -L=socks5+ws://:${PORT}
