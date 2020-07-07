@@ -10,5 +10,5 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && mv $GOPATH/src/github.com/ginuerzh/gost/cmd/gost/gost /usr/local/bin/ \
     && apk del .build-dependencies \
     && rm -rf /tmp
-
-ENTRYPOINT ["/bin/bash", "-c", "/usr/local/bin/gost $METHOD"]
+    
+CMD exec gost $METHOD
