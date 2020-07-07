@@ -1,5 +1,7 @@
 FROM alpine
 
+ENV METHOD      socks5+ws://:8080
+
 RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-certificates \
     && export GOPATH=/tmp/go \
     && git clone https://github.com/ginuerzh/gost $GOPATH/src/github.com/ginuerzh/gost \
