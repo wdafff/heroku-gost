@@ -5,7 +5,7 @@
   "env": {
     "METHOD": {
       "description": "method",
-      "value": '-L socks5+ws://:${PORT}',
+      "value": "-L socks5+ws://:${PORT}",
       "required": false
     }
   },
