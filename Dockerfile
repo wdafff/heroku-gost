@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV METHOD -L=socks5+ws://:$PORT
+ENV METHOD='-L=socks5+ws://:$PORT'
 
 RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-certificates \
     && export GOPATH=/tmp/go \
@@ -11,4 +11,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
 
-CMD usr/local/bin/gost '$METHOD'
+CMD /usr/local/bin/gost "'"$METHOD"'"
