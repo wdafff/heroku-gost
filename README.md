@@ -1,12 +1,14 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)  
+  
 > 提醒： 滥用可能导致账户就被BAN！！！  
   
-#### 点击[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)部署项目：  
+###### 点击图标部署项目：  
   
 1. 变量 METHOD 如不需要，保持默认留空即可，自定义使用方式参考 https://github.com/ginuerzh/gost/ https://docs.ginuerzh.xyz/gost/  
   
 2. 完成部署后，打开app ，显示404 page not found，表示部署成功  
   
-#### 客户端使用，这里介绍如下二种方式
+###### 客户端使用，这里介绍如下二种方式
   
 * v2ray ws tls: 
 ```bash
