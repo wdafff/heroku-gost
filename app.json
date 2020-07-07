@@ -5,7 +5,7 @@
   "env": {
     "METHOD": {
        "description": "method",
-       "value": "-L socks5+ws://:8080"
+       "value": "-L socks5+ws://:80"
      }
   },
   "stack": "container",
