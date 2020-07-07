@@ -21,3 +21,6 @@
 ```
   
 * gost -L=:1080 -F=socks5+wss://xxxxxxxxx.herokuapp.com:443
+  
+###### 搭配clouflare cdn
+* 参考https://github.com/CCChieh/IBMYes#cloudflare-%E9%AB%98%E9%80%9F%E8%8A%82%E7%82%B9%E4%B8%AD%E8%BD%AC
