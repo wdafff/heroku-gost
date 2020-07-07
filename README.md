@@ -9,7 +9,7 @@
 2. 完成部署后，打开app ，显示404 page not found，表示部署成功  
   
 #### 二. 客户端使用，这里介绍如下二种方式
-* v2ray ws tls: 
+* v2ray socks ws tls: 
 ```bash
 {
             "protocol": "socks",
