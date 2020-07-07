@@ -4,9 +4,10 @@
   "keywords": ["gost"],
   "env": {
     "METHOD": {
-       "description": "more method",
-       "value": ""
-     }
+      "description": "more method",
+      "value": "",
+      "required": false
+    }
   },
   "stack": "container",
   "website": "https://github.com/ginuerzh/gost/",
