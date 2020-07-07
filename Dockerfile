@@ -11,4 +11,4 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
     
-CMD exec gost -L $METHOD
+CMD eval gost -L $METHOD
