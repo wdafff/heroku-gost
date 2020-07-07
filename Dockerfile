@@ -1,7 +1,5 @@
 FROM alpine
 
-ENV METHOD='-L=socks5+ws://:$PORT'
-
 RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-certificates \
     && export GOPATH=/tmp/go \
     && git clone https://github.com/ginuerzh/gost $GOPATH/src/github.com/ginuerzh/gost \
@@ -11,4 +9,6 @@ RUN apk add --no-cache --virtual=.build-dependencies go gcc git libc-dev ca-cert
     && apk del .build-dependencies \
     && rm -rf /tmp
     
-CMD exec gost $METHOD
+ADD configure.sh /configure.sh
+RUN chmod +x /configure.sh
+CMD /configure.sh
